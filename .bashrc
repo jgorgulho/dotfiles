@@ -78,6 +78,11 @@ export BROWSER=firefox
 ##       Personal Alias Settings        ##
 ## ------------------------------------ ##
 
+# Alias for DotFiles Manager
+alias dfm="~/.bin/dfm"
+alias dfmi="~/.bin/dfm install"
+alias dfmu="~/.bin/dfm umi"
+
 # Source/Load ~/.bashrc Settings
 alias sourceBashrc="source ~/.bashrc"
 
