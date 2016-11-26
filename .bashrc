@@ -79,9 +79,9 @@ export BROWSER=firefox
 ## ------------------------------------ ##
 
 # Alias for DotFiles Manager
-alias dfm="~/.bin/dfm"
-alias dfmi="~/.bin/dfm install"
-alias dfmu="~/.bin/dfm umi"
+alias dfm="~/.dotfiles/.dfm"
+alias dfmi="~/.dotfiles/.dfm install"
+alias dfmu="~/.dotfiles/.dfm umi"
 
 # Source/Load ~/.bashrc Settings
 alias sourceBashrc="source ~/.bashrc"
