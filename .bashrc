@@ -12,7 +12,7 @@
 ### ------------------------------- ###
 if [ ! -d "$HOME/.dotfiles" ]; then
     cd $HOME
-    git clone htts://github.com/jgorgulho/dotfiles.git $HOME/.dotfiles
+    git clone https://github.com/jgorgulho/dotfiles.git $HOME/.dotfiles
 fi
 ~/.dotfiles/.dfm fetch
 ~/.dotfiles/.dfm submodule update
