@@ -10,6 +10,10 @@
 ### ------------------------------- ###
 ###       Personal Settings         ###
 ### ------------------------------- ###
+if [! -d "~/.dotfiles" ]; then
+    cd ~
+    git clone htts://github.com/jgorgulho/dotfiles.git .dotfiles
+fi
 ~/.dotfiles/.dfm fetch
 ~/.dotfiles/.dfm submodule update
 ~/.dotfiles/.dfm submodule pull
