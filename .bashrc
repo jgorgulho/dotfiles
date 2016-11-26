@@ -11,8 +11,8 @@
 ###       Personal Settings         ###
 ### ------------------------------- ###
 ~/.dotfiles/.dfm fetch
-~/.dotfiles/.dfm submodules update
-~/.dotfiles/.dfm submodules pull
+~/.dotfiles/.dfm submodule update
+~/.dotfiles/.dfm submodule pull
 ~/.dotfiles/.dfm install
 ~/.dotfiles/.dfm umi
 archey
