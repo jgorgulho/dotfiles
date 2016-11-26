@@ -16,7 +16,7 @@ if [ ! -d "$HOME/.dotfiles" ]; then
 fi
 ~/.dotfiles/.dfm fetch
 ~/.dotfiles/.dfm submodule update
-~/.dotfiles/.dfm submodule pull
+~/.dotfiles/.dfm pull
 ~/.dotfiles/.dfm install
 ~/.dotfiles/.dfm umi
 archey
