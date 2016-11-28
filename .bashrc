@@ -15,7 +15,11 @@ if [ ! -d "$HOME/.dotfiles" ]; then
     git clone https://github.com/jgorgulho/dotfiles.git $HOME/.dotfiles
 fi
 ~/.dotfiles/.dfm fetch
-~/.dotfiles/.dfm submodule update
+if [ "$(ls -A $HOME/.tmux/plugins/tmux-resurrect)" ]; then
+    ~/.dotfiles/.dfm submodule init
+else
+    ~/.dotfiles/.dfm submodule update
+fi
 ~/.dotfiles/.dfm pull
 ~/.dotfiles/.dfm install
 ~/.dotfiles/.dfm umi
