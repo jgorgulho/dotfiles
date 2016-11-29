@@ -19,6 +19,7 @@ if [ "$(ls -A $HOME/.tmux/plugins/tmux-resurrect)" ]; then
     ~/.dotfiles/.dfm submodule update
 else
     ~/.dotfiles/.dfm submodule init
+    ~/.dotfiles/.dfm submodule update
 fi
 ~/.dotfiles/.dfm pull
 ~/.dotfiles/.dfm install
