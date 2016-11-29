@@ -16,9 +16,9 @@ if [ ! -d "$HOME/.dotfiles" ]; then
 fi
 ~/.dotfiles/.dfm fetch
 if [ "$(ls -A $HOME/.tmux/plugins/tmux-resurrect)" ]; then
-    ~/.dotfiles/.dfm submodule init
-else
     ~/.dotfiles/.dfm submodule update
+else
+    ~/.dotfiles/.dfm submodule init
 fi
 ~/.dotfiles/.dfm pull
 ~/.dotfiles/.dfm install
