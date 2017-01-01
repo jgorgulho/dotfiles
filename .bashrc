@@ -10,20 +10,24 @@
 ### ------------------------------- ###
 ###       Personal Settings         ###
 ### ------------------------------- ###
-if [ ! -d "$HOME/.dotfiles" ]; then
-    cd $HOME
-    git clone https://github.com/jgorgulho/dotfiles.git $HOME/.dotfiles
+
+if [ ! -f /tmp/gotdotfiles ]; then
+    touch /tmp/gotdotfiles
+    if [ ! -d "$HOME/.dotfiles" ]; then
+        cd $HOME
+        git clone https://github.com/jgorgulho/dotfiles.git $HOME/.dotfiles
+    fi
+    ~/.dotfiles/.dfm fetch
+    if [ "$(ls -A $HOME/.tmux/plugins/tmux-resurrect)" ]; then
+        ~/.dotfiles/.dfm submodule update
+    else
+        ~/.dotfiles/.dfm submodule init
+        ~/.dotfiles/.dfm submodule update
+    fi
+    ~/.dotfiles/.dfm pull
+    ~/.dotfiles/.dfm install
+    ~/.dotfiles/.dfm umi
 fi
-~/.dotfiles/.dfm fetch
-if [ "$(ls -A $HOME/.tmux/plugins/tmux-resurrect)" ]; then
-    ~/.dotfiles/.dfm submodule update
-else
-    ~/.dotfiles/.dfm submodule init
-    ~/.dotfiles/.dfm submodule update
-fi
-~/.dotfiles/.dfm pull
-~/.dotfiles/.dfm install
-~/.dotfiles/.dfm umi
 archey
 
 ## --------------------------------- ##
