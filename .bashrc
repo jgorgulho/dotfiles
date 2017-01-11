@@ -145,7 +145,7 @@ if  [ $packageExists = true ]; then
     alias apt-cache="sudo apt-cache"
     alias apt-get="sudo apt-get"
     alias paci="sudo apt-get install"
-    alias pacs="sudo apt-cache search"
+    alias pacs="apt-cache search"
     alias pacr="sudo apt-get remove"
     alias packu="sudo apt-get update && sudo apt-get upgrade"
 fi
@@ -156,7 +156,7 @@ checkPackageExists $packageToCheck
 if  [ $packageExists = true ]; then
     alias zypper="sudo zypper"
     alias paci="sudo zypper install"
-    alias pacs="sudo zypper search"
+    alias pacs="zypper search"
     alias pacr="sudo zypper remove"
     alias pacu="sudo zypper update"
 fi
@@ -167,7 +167,7 @@ checkPackageExists $packageToCheck
 if  [ $packageExists = true ]; then
     alias yum="sudo yum"
     alias paci="sudo yum install"
-    alias pacs="sudo yum search"
+    alias pacs="yum search"
     alias pacu="sudo yum update"
     alias pacr="sudo yum remove"
 fi
@@ -178,7 +178,7 @@ checkPackageExists $packageToCheck
 if  [ $packageExists = true ]; then
     alias dnf="sudo dnf"
     alias paci="sudo dnf install"
-    alias pacs="sudo dnf search"
+    alias pacs="dnf search"
     alias pacu="sudo dnf update"
     alias pacr="sudo dnf remove"
 fi
