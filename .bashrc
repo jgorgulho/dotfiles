@@ -28,7 +28,7 @@ if [ ! -f /tmp/gotdotfiles ]; then
     ~/.dotfiles/.dfm install
     ~/.dotfiles/.dfm umi
 fi
-archey
+#archey
 
 ## --------------------------------- ##
 ##       Powerline Settings          ##
