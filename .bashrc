@@ -17,7 +17,7 @@ if [ ! -f /tmp/gotdotfiles ]; then
         cd $HOME
         git clone https://github.com/jgorgulho/dotfiles.git $HOME/.dotfiles
     fi
-    ~/.dotfiles/.dfm fetch
+    ~/.dotfiles/.dfm fetch origin
     if [ "$(ls -A $HOME/.tmux/plugins/tmux-resurrect)" ]; then
         ~/.dotfiles/.dfm submodule update
     else
