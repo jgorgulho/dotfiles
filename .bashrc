@@ -29,6 +29,7 @@ if [ ! -f /tmp/gotdotfiles ]; then
     ~/.dotfiles/.dfm umi
 fi
 #archey
+fortune | cowsay
 
 ## --------------------------------- ##
 ##       Powerline Settings          ##
