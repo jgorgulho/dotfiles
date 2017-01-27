@@ -112,6 +112,9 @@ nnoremap <c-e> :nohl<CR><c-e>
 filetype plugin indent on
 syntax on
 
+set autoread
+au CursorHold * checktime
+
 set omnifunc=syntaxcomplete#Complete
 
 " Fix the difficult-to-read default setting for diff text highlighting.  The
