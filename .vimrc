@@ -126,6 +126,9 @@ highlight! link DiffText MatchParen
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
-set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 set laststatus=2
 set t_Co=256
