@@ -15,7 +15,7 @@ if [ ! -f /tmp/gotdotfiles ]; then
     touch /tmp/gotdotfiles
     if [ ! -d "$HOME/.dotfiles" ]; then
         cd $HOME
-        git clone https://github.com/jgorgulho/dotfiles.git $HOME/.dotfiles
+        git clone "https://github.com/jgorgulho/dotfiles.git" $HOME/.dotfiles
     fi
     ~/.dotfiles/.dfm fetch origin
     if [ "$(ls -A $HOME/.tmux/plugins/tmux-resurrect)" ]; then
