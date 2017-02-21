@@ -1,1 +1,5 @@
-tmux_resurrect_2017-02-21T11:02:38.txt
+pane	0	1	:bash	1	:*	0	:/home/jgorgulho/kickstart	1	bash	:
+pane	1	1	:bash	1	:*	0	:/home/jgorgulho/kickstart	1	bash	:
+window	0	1	1	:*	bdbe,177x53,0,0,1
+window	1	1	1	:*	bdc0,177x53,0,0,3
+state	1	
