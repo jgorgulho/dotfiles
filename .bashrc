@@ -11,6 +11,17 @@
 ###       Personal Settings         ###
 ### ------------------------------- ###
 
+
+## --------------------------------- ##
+##       Correct Path for Jekyll     ##
+## --------------------------------- ##
+
+export PATH=$PATH:/usr/local/bin
+
+## --------------------------------- ##
+##       Personal Repos Settings     ##
+## --------------------------------- ##
+
 if [ ! -f /tmp/gotdotfiles ]; then
     touch /tmp/gotdotfiles
     if [ ! -d "$HOME/.dotfiles" ]; then
@@ -34,6 +45,7 @@ fortune | cowsay
 ## --------------------------------- ##
 ##       Powerline Settings          ##
 ## --------------------------------- ##
+
 if [ -f `which powerline-daemon` ]; then
   	powerline-daemon -q
   	POWERLINE_BASH_CONTINUATION=1
@@ -200,11 +212,11 @@ if  [ $packageExists = true ]; then
         alias wifi="sudo wifi-menu"
         # Pacmatic
         export warn_time="86400"  # (seconds)
-        export rss_feed="https://www.archlinux.org/feeds/news/"
+        #export rss_feed="https://www.archlinux.org/feeds/news/"
         export log_file="/var/log/arch-news.log"
         export pacdiff_program="pacdiff"
         export pacman_program="pacman"
-        export mail_list="https://lists.archlinux.org/pipermail/arch-general/2015-January.txt.gz"
+        #export mail_list="https://lists.archlinux.org/pipermail/arch-general/2015-January.txt.gz"
         export pacman_log="/var/log/pacman.log"
 fi
 
