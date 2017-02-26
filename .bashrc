@@ -211,13 +211,6 @@ if  [ $packageExists = true ]; then
         alias reflector="sudo reflector -l 30 -p http --sort rate --save /etc/pacman.d/mirrorlist"
         alias wifi="sudo wifi-menu"
         # Pacmatic
-        export warn_time="86400"  # (seconds)
-        #export rss_feed="https://www.archlinux.org/feeds/news/"
-        export log_file="/var/log/arch-news.log"
-        export pacdiff_program="pacdiff"
-        export pacman_program="pacman"
-        #export mail_list="https://lists.archlinux.org/pipermail/arch-general/2015-January.txt.gz"
-        #export pacman_log="/var/log/pacman.log"
 fi
 
 ## -------------------------------- ##
