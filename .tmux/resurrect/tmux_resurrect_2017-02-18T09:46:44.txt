@@ -1,0 +1,5 @@
+pane	0	1	:vim	1	:*	0	:/home/jgorgulho	0	bash	:su
+pane	0	1	:vim	1	:*	1	:/home/jgorgulho	0	bash	:
+pane	0	1	:vim	1	:*	2	:/home/jgorgulho	1	vim	:vim .bashrc
+window	0	1	1	:*	baf4,168x41,0,0[168x20,0,0,1,168x20,0,21{84x20,0,21,3,83x20,85,21,4}]
+state	0	

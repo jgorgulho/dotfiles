@@ -1,0 +1,4 @@
+pane	0	1	:bash	1	:*	0	:/home/jgorgulho	0	bash	:
+pane	0	1	:bash	1	:*	1	:/home/jgorgulho	1	bash	:bash
+window	0	1	1	:*	7d6f,168x41,0,0[168x20,0,0,1,168x20,0,21,2]
+state	0	

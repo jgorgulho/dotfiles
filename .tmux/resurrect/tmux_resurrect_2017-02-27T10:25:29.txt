@@ -1,0 +1,5 @@
+pane	0	1	:ssh	1	:*	0	:/home/jgorgulho/kickstart	1	ssh	:ssh 192.168.122.3
+pane	0	1	:ssh	1	:*	1	:/home/jgorgulho	0	ssh	:ssh 192.168.122.3
+pane	0	1	:ssh	1	:*	2	:/home/jgorgulho	0	ssh	:ssh 192.168.122.3
+window	0	1	1	:*	6319,168x42,0,0[168x14,0,0,1,168x27,0,15{84x27,0,15,2,83x27,85,15,3}]
+state	0	

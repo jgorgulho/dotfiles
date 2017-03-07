@@ -1,0 +1,4 @@
+pane	0	1	:bash	1	:*	0	:/home/jgorgulho	1	bash	:su
+pane	0	1	:bash	1	:*	1	:/home/jgorgulho/Downloads	0	bash	:
+window	0	1	1	:*	fd6f,168x41,0,0[168x20,0,0,1,168x20,0,21,3]
+state	0	
