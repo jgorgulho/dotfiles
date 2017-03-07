@@ -77,6 +77,7 @@ function toggleKDEDW(){
             if [[ $REPLY =~ ^[Yy]$ ]]; then
                 echo "Will change to XMonad. Please Logout..."
                 echo "export KDEWM=$(which xmonad)" > $kdeWMCfgFile 2> /dev/null
+                chmod +x $kdeWMCfgFile
             else
                 echo "Will NOT change to XMonad. Please continue..."
             fi
@@ -87,6 +88,7 @@ function toggleKDEDW(){
             if [[ $REPLY =~ ^[Yy]$ ]]; then
                 echo "Will change to KWin. Please Logout..."
                 echo "export KDEWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
+                chmod +x $kdeWMCfgFile
             else
                 echo "Will NOT change to KWin. Please continue..."
             fi
@@ -98,6 +100,7 @@ function toggleKDEDW(){
         mkdir -p ~/.config/plasma-workspace/env
         echo "Will change to KWin. Please Logout..."
         echo "export KDEWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
+        chmod +x $kdeWMCfgFile
     fi
 
 }
