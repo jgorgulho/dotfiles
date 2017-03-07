@@ -95,7 +95,7 @@ function toggleKDEDW(){
         fi
     else
         echo "The file doesn't exist. Creating a default one..."
-        mkdir -p ~/.config/plasma-wokspace/env
+        mkdir -p ~/.config/plasma-workspace/env
         echo "Will change to KWin. Please Logout..."
         echo "export KDEWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
     fi
