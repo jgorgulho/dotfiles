@@ -76,7 +76,7 @@ function toggleKDEDW(){
             echo
             if [[ $REPLY =~ ^[Yy]$ ]]; then
                 echo "Will change to XMonad. Please Logout..."
-                echo "export KDWM=$(which xmonad)" > $kdeWMCfgFile 2> /dev/null
+                echo "export KDEWM=$(which xmonad)" > $kdeWMCfgFile 2> /dev/null
             else
                 echo "Will NOT change to XMonad. Please continue..."
             fi
@@ -86,7 +86,7 @@ function toggleKDEDW(){
             echo
             if [[ $REPLY =~ ^[Yy]$ ]]; then
                 echo "Will change to KWin. Please Logout..."
-                echo "export KDWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
+                echo "export KDEWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
             else
                 echo "Will NOT change to KWin. Please continue..."
             fi
@@ -97,7 +97,7 @@ function toggleKDEDW(){
         echo "The file doesn't exist. Creating a default one..."
         mkdir -p ~/.config/plasma-wokspace/env
         echo "Will change to KWin. Please Logout..."
-        echo "export KDWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
+        echo "export KDEWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
     fi
 
 }
