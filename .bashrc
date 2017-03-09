@@ -66,45 +66,6 @@ function checkPackageExists() {
     fi
 }
 
-# Function to change Plasma KDE5 WM from KWin to XMonad and vice versa
-kdeWMCfgFile=~/.config/plasma-workspace/env/set_window_manager.sh
-function toggleKDEDW(){
-    if [ -f $kdeWMCfgFile ]; then
-        if grep -q kwin $kdeWMCfgFile ; then
-            echo "Plasmas's WM is KWin at the moment."
-            read -p "Do you want to change to XMonad? " -n 1 -r
-            echo
-            if [[ $REPLY =~ ^[Yy]$ ]]; then
-                echo "Will change to XMonad. Please Logout..."
-                echo "export KDEWM=$(which xmonad)" > $kdeWMCfgFile 2> /dev/null
-                chmod +x $kdeWMCfgFile
-            else
-                echo "Will NOT change to XMonad. Please continue..."
-            fi
-        elif grep -q xmonad $kdeWMCfgFile ; then
-            echo "Plasmas's WM is XMonad at the moment."
-            read -p "Do you want to change to KWin? " -n 1 -r
-            echo
-            if [[ $REPLY =~ ^[Yy]$ ]]; then
-                echo "Will change to KWin. Please Logout..."
-                echo "export KDEWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
-                chmod +x $kdeWMCfgFile
-            else
-                echo "Will NOT change to KWin. Please continue..."
-            fi
-        else
-            echo "Sadly at the momment only supports KWin and XMonad..."
-        fi
-    else
-        echo "The file doesn't exist. Creating a default one..."
-        mkdir -p ~/.config/plasma-workspace/env
-        echo "Will change to KWin. Please Logout..."
-        echo "export KDEWM=$(which kwin)" > $kdeWMCfgFile 2> /dev/null
-        chmod +x $kdeWMCfgFile
-    fi
-
-}
-
 ## ------------------------------------ ##
 ##       Personal GNUPG Settings        ##
 ## ------------------------------------ ##
