@@ -1,6 +1,0 @@
-pane	0	1	:bash	0	:-	0	:/home/jgorgulho	1	bash	:
-pane	0	2	:bash	1	:*	0	:/home/jgorgulho/installs	1	vim	:vim fedoraWorkstationInstall.sh
-pane	0	2	:bash	1	:*	1	:/home/jgorgulho/installs	0	bash	:mf dnfGroupInfo/InputMEthods dnfGroupInfo/InputMethods
-window	0	1	0	:-	c1be,150x36,0,0,1
-window	0	2	1	:*	4d3f,150x36,0,0{75x36,0,0,2,74x36,76,0,5}
-state	0	

@@ -1,7 +1,0 @@
-pane	0	1	:bash	0	:#-	0	:/home/jgorgulho	1	bash	:
-pane	0	2	:vim	1	:*	0	:/home/jgorgulho/temp (deleted)	1	vim	:vim /home/jgorgulho/.bashrc
-pane	0	2	:vim	1	:*	1	:/home/jgorgulho	0	w3m	:w3m duckduckgo.com
-pane	0	2	:vim	1	:*	2	:/home/jgorgulho	0	bash	:bash
-window	0	1	0	:#-	b3fe,168x41,0,0,1
-window	0	2	1	:*	bfa3,168x41,0,0[168x21,0,0,4,168x19,0,22{84x19,0,22,5,83x19,85,22,6}]
-state	0	

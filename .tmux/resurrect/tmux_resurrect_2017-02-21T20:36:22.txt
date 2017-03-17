@@ -1,5 +1,0 @@
-pane	0	1	:bash	1	:*	0	:/home/jgorgulho/kickstart	1	bash	:
-pane	1	1	:bash	1	:*	0	:/home/jgorgulho/kickstart	1	bash	:
-window	0	1	1	:*	bdbe,177x53,0,0,1
-window	1	1	1	:*	b800,168x42,0,0,3
-state	1	

@@ -1,5 +1,0 @@
-pane	0	1	:bash	1	:*	0	:/home/jgorgulho	0	w3m	:w3m duckduckgo.com
-pane	0	1	:bash	1	:*	1	:/home/jgorgulho/.config	1	bash	:
-pane	0	1	:bash	1	:*	2	:/home/jgorgulho	0	w3m	:w3m duckduckgo.com
-window	0	1	1	:*	195d,170x47,0,0[170x23,0,0,1,170x23,0,24{85x23,0,24,2,84x23,86,24,3}]
-state	0	
