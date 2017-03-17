@@ -6,7 +6,7 @@
   user = jgorgulho
 
 [core]
-  editor = vim
+	editor = atom --wait
   filemode = false
   trustctime = false
   autocrlf = input
