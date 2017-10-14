@@ -16,7 +16,7 @@
 ##       Correct Path for Jekyll     ##
 ## --------------------------------- ##
 
-export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/bin:~/.opt
 
 ## --------------------------------- ##
 ##       Personal Repos Settings     ##
@@ -211,6 +211,7 @@ fi
 ## Docker alias and function        ##
 ## -------------------------------- ##
 
+alias docker="sudo docker"
 # Get latest container ID
 alias dl="docker ps -l -q"
 # Get container process
