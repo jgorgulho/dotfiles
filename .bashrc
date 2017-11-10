@@ -210,7 +210,7 @@ fi
 ## -------------------------------- ##
 ## Docker alias and function        ##
 ## -------------------------------- ##
-
+alias docker-compose="sudo docker-compose"
 alias docker="sudo docker"
 # Get latest container ID
 alias dl="docker ps -l -q"
