@@ -66,6 +66,27 @@ function checkPackageExists() {
     fi
 }
 
+# Function to check which version of OpenSuse is being run
+# Inputs:
+# n/a
+# Returns:
+# 0 - Tumbleweed
+# 1 - Leap
+# 2 - Something else
+#function checkOpenSuseVersion(){
+#  fileToTestOn="/etc/os-release"
+#  versionToTest="leap"
+#  if [ ! -z $(grep "$versionToTest" "$fileToTestOn") ]; then
+#    echo "Testing version $versionToTest at $fileToTestOn"
+#    echo 1
+#    versionToTest="tumbleweed"
+#  fi
+#  if [ ! -z $(grep "$versionToTest" "$fileToTestOn") ]; then
+#    echo "Testing version $versionToTest at $fileToTestOn"
+#    echo "Version installed is $versionToTest"
+#  fi
+#}
+
 ## ------------------------------------ ##
 ##       Personal GNUPG Settings        ##
 ## ------------------------------------ ##
@@ -165,7 +186,16 @@ if  [ $packageExists = true ]; then
     alias paci="sudo zypper install"
     alias pacs="zypper search"
     alias pacr="sudo zypper remove"
-    alias pacu="sudo zypper update"
+    
+    fileToTestOn="/etc/os-release"
+    versionToTest="leap"
+    if [ ! -z $(grep "$versionToTest" "$fileToTestOn") ]; then
+      alias pacu="sudo zypper update"
+    fi
+    versionToTest="tumbleweed"
+    if [ ! -z $(grep "$versionToTest" "$fileToTestOn") ]; then
+      alias pacu="sudo zypper dup --no-allow-vendor-change"
+    fi    
 fi
 
 # CentOs/RedHat Fedora <22
